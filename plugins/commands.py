@@ -1,3 +1,5 @@
+from plugins.clone import urclone  # Import the urclone function from clone.py (if needed)
+
 import os
 import sys
 import pytz
@@ -110,6 +112,14 @@ async def how_to_use(bot, query):
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⛔ Back', callback_data='help')]]),
         disable_web_page_preview=True
     )
+
+@Client.on_message(filters.private & filters.command(['urclone']))
+async def urclone_command(client, message):
+    try:
+        # Make sure urclone function is imported and correctly handles the logic
+        await urclone(client, message)  # Calling the urclone function
+    except Exception as e:
+        await message.reply_text(f"❌ Error: {e}")
 
 @Client.on_callback_query(filters.regex(r'^back'))
 async def back(bot, query):
