@@ -169,7 +169,7 @@ async def urclone(client, message):
 
         # Simulate clone bot setup: Prepare a new API token and configs (placeholder logic)
         new_bot_token = "Your-Generated-Bot-Token-Here"  # Replace with dynamic generation if possible
-        clone_instructions = f\"\"\" 
+        clone_instructions = f""" 
         ✅ Clone Bot Created! 
 
         Bot Token: `{new_bot_token}`
@@ -178,7 +178,7 @@ async def urclone(client, message):
         1. Download the bot repository: [GitHub Link or Source URL]
         2. Add the above token to `config.py` or `app.json`.
         3. Deploy the bot on your preferred platform (Heroku, VPS, etc.). 
-        \"\"\" 
+        """ 
 
         # Send deployment instructions to the user
         await message.reply_text(clone_instructions, quote=True)
