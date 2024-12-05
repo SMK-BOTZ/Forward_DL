@@ -1,4 +1,4 @@
-from plugins.clone import urclone  # Import the urclone function from clone.py (if needed)
+from plugins.clone import urclone, delete_clone_bot  # Import the functions
 
 import os
 import sys
@@ -116,8 +116,16 @@ async def how_to_use(bot, query):
 @Client.on_message(filters.private & filters.command(['urclone']))
 async def urclone_command(client, message):
     try:
-        # Call the urclone function to create the clone bot
+        # Call the urclone function to create and start the clone bot
         await urclone(client, message)
+    except Exception as e:
+        await message.reply_text(f"❌ Error occurred: {e}")
+
+@Client.on_message(filters.private & filters.command(['delete_clone_bot']))
+async def delete_clone_bot_command(client, message):
+    try:
+        # Call the delete_clone_bot function to stop and remove the clone bot
+        await delete_clone_bot(client, message)
     except Exception as e:
         await message.reply_text(f"❌ Error occurred: {e}")
 
