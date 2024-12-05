@@ -157,33 +157,3 @@ async def stats(client, message):
         chat_id=message.chat.id,
         text=Translation.STATUS_TXT.format(users_count, bots_count, temp.forwardings, total_channels, temp.BANNED_USERS )
     )
-
-@Client.on_message(filters.private & filters.command(['urclone']))
-async def urclone(client, message):
-    try:
-        # Inform the user about the cloning process
-        await message.reply_text(
-            "Creating a clone bot for you... Please wait!",
-            quote=True
-        )
-
-        # Simulate clone bot setup: Prepare a new API token and configs (placeholder logic)
-        new_bot_token = "Your-Generated-Bot-Token-Here"  # Replace with dynamic generation if possible
-        clone_instructions = f""" 
-        ✅ Clone Bot Created! 
-
-        Bot Token: `{new_bot_token}`
-
-        Deployment Steps:
-        1. Download the bot repository: [GitHub Link or Source URL]
-        2. Add the above token to `config.py` or `app.json`.
-        3. Deploy the bot on your preferred platform (Heroku, VPS, etc.). 
-        """ 
-
-        # Send deployment instructions to the user
-        await message.reply_text(clone_instructions, quote=True)
-
-    except Exception as e:
-        # Handle errors gracefully and inform the user
-        await message.reply_text(f"❌ An error occurred while creating your clone: {e}", quote=True)
-
