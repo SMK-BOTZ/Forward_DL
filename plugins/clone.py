@@ -23,8 +23,8 @@ async def urclone(client, message):
         # Create the clone bot using the provided token
         clone_bot = Client(
             f"cloned_bot_{user_bot_token}",  # Session name for the cloned bot (can be dynamic)
-            api_id="your_main_api_id",  # Main bot's API ID
-            api_hash="your_main_api_hash",  # Main bot's API Hash
+            api_id="28243586",  # Main bot's API ID
+            api_hash="4022d5686b9b7a7cf8891205921a0ab3",  # Main bot's API Hash
             bot_token=user_bot_token  # User's bot token
         )
 
