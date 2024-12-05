@@ -4,7 +4,6 @@ TgCrypto
 Dnspython
 datetime
 pytz
-asyncio
 
 #----app.py----#
 Flask==1.1.2
