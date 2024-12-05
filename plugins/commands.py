@@ -116,10 +116,10 @@ async def how_to_use(bot, query):
 @Client.on_message(filters.private & filters.command(['urclone']))
 async def urclone_command(client, message):
     try:
-        # Make sure urclone function is imported and correctly handles the logic
-        await urclone(client, message)  # Calling the urclone function
+        # Call the urclone function to create the clone bot
+        await urclone(client, message)
     except Exception as e:
-        await message.reply_text(f"❌ Error: {e}")
+        await message.reply_text(f"❌ Error occurred: {e}")
 
 @Client.on_callback_query(filters.regex(r'^back'))
 async def back(bot, query):
