@@ -10,10 +10,15 @@ class Config:
     BOT_SESSION = environ.get("BOT_SESSION", "bot") 
 
     PICS = (environ.get('PICS', 'https://graph.org/file/e223aea8aca83e99162bb.jpg'))
-    # Get this from https://my.telegram.org
+
+    #clone
+    
+    API_ID = "28243586"         # Get this from https://my.telegram.org
+    API_HASH = "4022d5686b9b7a7cf8891205921a0ab3"     # Get this from https://my.telegram.org
     DB_URI = "mongodb+srv://sahilkaleech:ffmFFKUQXBFDgtxr@cluster0.fn00j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"  # MongoDB connection URI
-    DB_NAME = "cluster0"          # Database name
-    CLONE_MODE = True                       
+    DB_NAME = "Cluster0"          # Database name
+    CLONE_MODE = True                       # Enable or disable the clone feature
+                 
     
     DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://smkbotz:Ur3UZGbmzAvq9ig0@cluster0.s2vqa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     DATABASE_NAME = environ.get("DATABASE_NAME", "Cluster0")
