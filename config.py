@@ -2,12 +2,11 @@
 from os import environ 
 
     #clone
-    
-    API_ID = "28243586"         # Get this from https://my.telegram.org
-    API_HASH = "4022d5686b9b7a7cf8891205921a0ab3"     # Get this from https://my.telegram.org
-    DB_URI = "mongodb+srv://sahilkaleech:ffmFFKUQXBFDgtxr@cluster0.fn00j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"  # MongoDB connection URI
-    DB_NAME = "Cluster0"          # Database name
-    CLONE_MODE = True                       # Enable or disable the clone feature
+API_ID = "28243586"  # Get this from https://my.telegram.org
+API_HASH = "4022d5686b9b7a7cf8891205921a0ab3"  # Replace with your Telegram API Hash
+DB_URI = "mongodb+srv://sahilkaleech:ffmFFKUQXBFDgtxr@cluster0.fn00j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"  # Replace with your MongoDB URI
+DB_NAME = "Cluster0"  # Replace with your database name
+CLONE_MODE = True  # Set to True to enable cloning
 
 class Config:
     
