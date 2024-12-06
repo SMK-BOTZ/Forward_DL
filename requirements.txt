@@ -1,9 +1,10 @@
-pyrofork
+pyrogram
 motor
 TgCrypto
 Dnspython
 datetime
 pytz
+pymongo
 
 #----app.py----#
 Flask==1.1.2
