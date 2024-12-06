@@ -11,7 +11,7 @@ class Config:
 
     PICS = (environ.get('PICS', 'https://graph.org/file/e223aea8aca83e99162bb.jpg'))
     # Get this from https://my.telegram.org
-    DB_URI = "mongodb+srv://madarazbotz:Squ7qrKySvxFVpuD@cluster0.cjp2q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"  # MongoDB connection URI
+    DB_URI = "mongodb+srv://sahilkaleech:ffmFFKUQXBFDgtxr@cluster0.fn00j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"  # MongoDB connection URI
     DB_NAME = "cluster0"          # Database name
     CLONE_MODE = True                       
     
